@@ -1,0 +1,28 @@
+---
+title: Package wyz.code.offensiveProgramming release notes
+author: Fabien GELINEAU
+date: 2019-07-03
+output: html_document
+css: ../vignettes/style.css
+---
+
+# wyz.code.offensiveProgramming 1.01.002
+
+## Content
+
+```{r echo = FALSE}
+pkgn <- 'wyz.code.offensiveProgramming'
+sf <- system.file('life-cycle/data-1.01.002.rds', package = pkgn)
+dt_1.01.002 <- readRDS(sf)
+DT::datatable(dt_1.01.002, options(paging = FALSE))
+```
+
+## Changes
+
+1. Alignement of vignette onto online offensive programming book
+1. release new bundle for CRAN submission
+
+## Identification
+
+major [asterion] minor [awesome] fix [beta] timestamp [2019-07-03 18:38:00] number [1.01.002]
+

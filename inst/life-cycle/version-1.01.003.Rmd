@@ -1,0 +1,27 @@
+---
+title: Package wyz.code.offensiveProgramming release notes
+author: Fabien GELINEAU
+date: 2019-07-03
+output: html_document
+css: ../vignettes/style.css
+---
+
+# wyz.code.offensiveProgramming 1.01.003
+
+## Content
+
+```{r echo = FALSE}
+pkgn <- 'wyz.code.offensiveProgramming'
+sf <- system.file('life-cycle/data-1.01.003.rds', package = pkgn)
+dt_1.01.003 <- readRDS(sf)
+DT::datatable(dt_1.01.003, options(paging = FALSE))
+```
+
+## Changes
+
+1. removed undesirable dependency against wyz.code.ops
+
+## Identification
+
+major [asterion] minor [awesome] fix [gamma] timestamp [2019-07-03 20:39:14] number [1.01.003]
+
