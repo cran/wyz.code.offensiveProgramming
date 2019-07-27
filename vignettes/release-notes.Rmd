@@ -1,7 +1,7 @@
 ---
 title: Release notes of package wyz.code.offensiveProgramming
 author: Fabien GELINEAU
-date: 2019-07-10
+date: 2019-07-24
 output: rmarkdown::html_vignette
 css: style.css
 vignette: >
@@ -104,4 +104,45 @@ DT::datatable(ds, options(paging = FALSE))
 ## Identification
 
 major [asterion] minor [awesome] fix [epsilon] timestamp [2019-07-10 21:11:33] number [1.01.005]
+
+# wyz.code.offensiveProgramming 1.01.006
+
+## Content
+
+```{r echo = FALSE}
+sf <- system.file("life-cycle/data-1.01.006.rds", package = "wyz.code.offensiveProgramming")
+ds <- readRDS(sf)
+DT::datatable(ds, options(paging = FALSE))
+```
+
+## Changes
+
+1. Name must not be fully capitalized in DESCRIPTION. Changed to Gelineau
+1. Wyzardy is mispelled. Changed to wizardy. 
+
+## Identification
+
+major [asterion] minor [awesome] fix [dzeta] timestamp [2019-07-24 10:38:20] number [1.01.006]
+
+# wyz.code.offensiveProgramming 1.01.007
+
+## Content
+
+```{r echo = FALSE}
+sf <- system.file("life-cycle/data-1.01.007.rds", package = "wyz.code.offensiveProgramming")
+ds <- readRDS(sf)
+DT::datatable(ds, options(paging = FALSE))
+```
+
+## Changes
+
+1. Added manual page for print.EvaluationMode
+1. Added manual page for print.TestCaseDefinition
+1. modified implementation of runTestCase to bring more information in output and
+ease a posteriori understanding and debugging
+
+## Identification
+
+major [asterion] minor [awesome] fix [eta] timestamp [2019-07-24 10:42:21] number [1.01.007]
+
 

@@ -1,0 +1,27 @@
+---
+title: Package wyz.code.offensiveProgramming release notes
+author: Fabien GELINEAU
+date: 2019-07-24
+output: html_document
+css: ../vignettes/style.css
+---
+
+# wyz.code.offensiveProgramming 1.01.006
+
+## Content
+
+```{r echo = FALSE}
+sf <- system.file("life-cycle/data-1.01.006.rds", package = "wyz.code.offensiveProgramming")
+ds <- readRDS(sf)
+DT::datatable(ds, options(paging = FALSE))
+```
+
+## Changes
+
+1. Name must not be fully capitalized in DESCRIPTION. Changed to Gelineau
+1. Wyzardy is mispelled. Changed to wizardy. 
+
+## Identification
+
+major [asterion] minor [awesome] fix [dzeta] timestamp [2019-07-24 10:38:20] number [1.01.006]
+

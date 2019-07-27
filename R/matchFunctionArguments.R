@@ -8,7 +8,9 @@ matchFunctionArguments <- function(realArguments_l,
     anm <- sapply(seq_len(length(real_l)), function(k) {
       nm <- names(real_l)[k]
       pn <- if (missing(nm) || is.null(nm) || is.na(nm) ||nchar(nm) == 0) remaining[1] else remaining[pmatch(nm, remaining)]
-      if (pn != ellipsis) remaining <<- setdiff(remaining, pn)
+      if (length(pn) > 0) {
+        if (!is.na(pn) && pn != ellipsis) remaining <<- setdiff(remaining, pn)
+      }
       pn
     }, simplify = TRUE)
 
@@ -18,7 +20,7 @@ matchFunctionArguments <- function(realArguments_l,
 
     rv <- sapply(seq_len(length(real_l)), function(k) {
       #catn('parameter name', anm[k], 'value', strBracket(real_l[[k]]))
-      if (anm[k] != ellipsis) {
+      if (!is.na(anm[k]) && anm[k] != ellipsis) {
         functionParameterTypeFactory_o_1$verifyValue(FunctionParameterName(anm[k]), real_l[[k]])
       } else  {
         list(parameter_name = ellipsis,

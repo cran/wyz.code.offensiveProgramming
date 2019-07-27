@@ -27,3 +27,13 @@ sf <- system.file("life-cycle/data-1.01.005.rds", package = "wyz.code.offensiveP
 ds <- readRDS(sf)
 DT::datatable(ds, options(paging = FALSE))
 
+## ----echo = FALSE--------------------------------------------------------
+sf <- system.file("life-cycle/data-1.01.006.rds", package = "wyz.code.offensiveProgramming")
+ds <- readRDS(sf)
+DT::datatable(ds, options(paging = FALSE))
+
+## ----echo = FALSE--------------------------------------------------------
+sf <- system.file("life-cycle/data-1.01.007.rds", package = "wyz.code.offensiveProgramming")
+ds <- readRDS(sf)
+DT::datatable(ds, options(paging = FALSE))
+
