@@ -1,7 +1,7 @@
 Package: wyz.code.offensiveProgramming
 Type: Package
 Title: Wizardry Code Offensive Programming
-Version: 1.1.7
+Version: 1.1.8
 Author: Fabien Gelineau <neonira@gmail.com>
 Maintainer: Fabien Gelineau <neonira@gmail.com>
 Description: Allows to change R coding from defensive programming (i.e. many input
@@ -19,6 +19,6 @@ Suggests: testthat, knitr, rmarkdown, DT (>= 0.5)
 RoxygenNote: 6.1.1
 VignetteBuilder: knitr
 NeedsCompilation: no
-Packaged: 2019-07-27 13:12:07 UTC; fgelineau
+Packaged: 2019-07-27 17:54:07 UTC; fgelineau
 Repository: CRAN
-Date/Publication: 2019-07-27 13:50:02 UTC
+Date/Publication: 2019-07-27 21:40:02 UTC
