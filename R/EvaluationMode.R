@@ -18,5 +18,5 @@ EvaluationMode <- function(value_s_1 = defineEvaluationModes()[2]) {
   self
 }
 
-print.EvaluationMode <- function(x, ...) catn(x$toString(), ...)
+print.EvaluationMode <- function(x, ...) cat(x$toString(), ..., '\n')
 

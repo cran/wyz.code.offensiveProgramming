@@ -3,8 +3,8 @@ verifyObjectNames <- function(object_o_1, functionParameterTypeFactory_o_1 = ret
   if (!is.object(object_o_1)) abort('parameter object_ is not an object')
   v <- typeof(object_o_1)
   if (v != 'environment') abort(paste('parameter object is not of supported type',
-                                                   strBracket(v),
-                                                    'supported types are [environment, R6 classes]'))
+                                      strBracket(v),
+                                      'supported types are [environment, R6 classes]'))
 
   computeParameterNameCompliance <- function() {
 
@@ -35,12 +35,13 @@ verifyObjectNames <- function(object_o_1, functionParameterTypeFactory_o_1 = ret
   ccf <- verifyClassName(cn, FALSE)
 
   ofn <- getObjectFunctionNames(object_o_1)
-  fct <- verifyFunctionName(ofn, TRUE)
-  fcf <- verifyFunctionName(ofn, FALSE)
-  fct <- verifyFunctionName(ofn, TRUE)
-  pc <- computeParameterNameCompliance()
-  snc <- cct && all(fct) && all(pc$semantic_naming_check)
-  slc <- ccf && all(fcf) && all(pc$semantic_naming_check)
+  if (length(ofn) > 0) {
+    fcf <- verifyFunctionName(ofn, FALSE)
+    fct <- verifyFunctionName(ofn, TRUE)
+    pc <- computeParameterNameCompliance()
+    snc <- cct && all(fct) && all(pc$semantic_naming_check)
+    slc <- ccf && all(fcf) && all(pc$semantic_naming_check)
+  }
   frt <- defineFunctionReturnTypesParameterName() %in% ll
   tcd <- defineTestCaseDefinitionsParameterName() %in% ll
   missing_fn <- NA_character_

@@ -14,9 +14,15 @@ matchFunctionArguments <- function(realArguments_l,
       pn
     }, simplify = TRUE)
 
-    if (!use_ellipsis && length(unique(anm)) != length(anm))
-      return(list(status = FALSE, message = paste('parameter names mismatch',
-                                                  strJoin(anm))))
+    if (!use_ellipsis && length(unique(anm)) != length(anm)) {
+      ta <- table(names(real_l))
+      return(rbindlist(list(
+        list(parameter_name = 'input real argument names',
+             parameter_value = names(ta)[ta > 1],
+             validity = FALSE,
+             message = 'parameter names mismatch')
+      )))
+    }
 
     rv <- sapply(seq_len(length(real_l)), function(k) {
       #catn('parameter name', anm[k], 'value', strBracket(real_l[[k]]))
@@ -26,7 +32,7 @@ matchFunctionArguments <- function(realArguments_l,
         list(parameter_name = ellipsis,
              parameter_value = list(real_l[[k]]),
              validity = TRUE,
-             message = 'ellispsis match all')
+             message = 'ellipsis matches all')
       }
     }, simplify = FALSE)
     if (is.na(message_s_1)) rbindlist(rv) else rbindlist(append(rv,
@@ -38,7 +44,7 @@ matchFunctionArguments <- function(realArguments_l,
   }
 
   message <- NA_character_
-  ellipsis <- '...'
+  ellipsis <- getEllipsisName()
   lsa <- length(signatureArguments_s)
   lra <- length(realArguments_l)
   use_ellipsis <- ellipsis %in% signatureArguments_s

@@ -1,5 +1,5 @@
 getRObjectClassKind <-  function(object_) {
-  if (!is.object(object_)) return(NA)
+  if (!is.object(object_)) return(NA_character_)
   if (isS4(object_)) {
     if (is(object_, 'refClass')) return('RC')
     return('S4')

@@ -21,9 +21,10 @@ AdditionFI_ <- function() {
   generateError <- function() stop('generated error')
 
   function_return_types <- data.table(
-    function_name = c('addNumeric', 'addDouble', 'addMultiDouble', 'addInteger', 'addMultiInteger', 'add3length',
+    function_name = c('addNumeric', 'addDouble', 'addMultiDouble', 'addInteger', 'addMultiInteger',
+                      'add3length', 'divideByZero',
                       'generateWarning', 'generateError'),
-    return_value = c('x_n', 'x_d', 'x_d', 'x_i', 'x_i', 'x_i_3l', 'x_w', 'x_e')
+    return_value = c('x_n', 'x_d', 'x_d', 'x_i', 'x_i', 'x_i_3l', 'x_d', 'x_w', 'x_e')
   )[order(function_name)]
 
   self

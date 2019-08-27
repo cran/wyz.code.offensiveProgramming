@@ -11,7 +11,7 @@ getObjectFunctionArguments <- function(object_) {
             'S3' = get(paste0(f, '.', cn), mode = 'function'),
             'RC' = eval(parse(text = paste0(cn, '$def@refMethods[["', f, '"]]')))
     )
-    x <- formalArgs(fa)
+    x <- retrieveFunctionArgumentNames(fa)
     if (is.null(x)) return(vector('character', 0))
     x
   }) #, simplify = FALSE)
