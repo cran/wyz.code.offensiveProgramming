@@ -1,5 +1,5 @@
-\name{getRObjectClassKind}
-\alias{getRObjectClassKind}
+\name{getObjectClassKind}
+\alias{getObjectClassKind}
 \title{
 Get \R object class kind
 }
@@ -7,10 +7,10 @@ Get \R object class kind
 Get the class kind of an \R object as a string.
 }
 \usage{
-getRObjectClassKind(object_)
+getObjectClassKind(object_o_1)
 }
 \arguments{
-  \item{object_}{ the object to analyze. See \code{\link{is.object}}.}
+  \item{object_o_1}{ the object to analyze. See \code{\link{is.object}}.}
 }
 \value{
 A single \code{character} value, taken in set \code{"S3"}, \code{"S4"},
@@ -26,7 +26,7 @@ Maintainer: \packageMaintainer{wyz.code.offensiveProgramming}
 }
 \examples{
 ##---- typical case ----
-getRObjectClassKind(new.env())
+getObjectClassKind(new.env())
 # [1] NA
 
 myrc <- setRefClass("RC",
@@ -38,7 +38,7 @@ myrc <- setRefClass("RC",
   )
 )
 
-getRObjectClassKind(myrc$new())
+getObjectClassKind(myrc$new())
 # [1] RC
 
 myr6 <- R6::R6Class("R6",
@@ -50,7 +50,7 @@ myr6 <- R6::R6Class("R6",
   )
 )
 
-getRObjectClassKind(myr6$new())
+getObjectClassKind(myr6$new())
 # [1] R6
 
 }

@@ -32,9 +32,9 @@ Refer to \code{\link{defineEvaluationModes}}
 \examples{
 ##---- typical case ----
 library('data.table')
-source(system.file('code-samples/tc-defs/good/partial/AdditionTCPartial.R',
+source(system.file('code-samples/tcd-defs/good/partial/AdditionTCPartial.R',
                    package = 'wyz.code.offensiveProgramming'))
-source(system.file('code-samples/no-instrumentation/Addition.R',
+source(system.file('code-samples/no-defs/Addition.R',
                    package = 'wyz.code.offensiveProgramming'))
 retrieveTestCaseDefinitions(AdditionTCPartial()) # works, renders a data.table
 retrieveTestCaseDefinitions(Addition()) # fails, renders a list

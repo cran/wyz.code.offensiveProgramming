@@ -27,7 +27,11 @@ FunctionParameterTypeFactory <- function() {
 
   isUnsignedReal <- function(o_1_) isPureReal(o_1_) && o_1_ >= 0.0
 
+  isNegativeReal <- function(o_1_) isPureReal(o_1_) && o_1_ <= 0.0
+
   isUnsignedInteger <- function(o_1_) isPureMathInteger(o_1_) && o_1_ >= 0L
+
+  isNegativeInteger <- function(o_1_) isPureMathInteger(o_1_) && o_1_ <= 0L
 
   isString <- function(o_1_) is.character(o_1_) && !is.na(o_1_)
 
@@ -70,7 +74,13 @@ FunctionParameterTypeFactory <- function() {
     list('ra'  , 'raw'             , list(is.raw)                  , type_classes$basic),
 
     list('ui'  , 'unsigned integer', list(isUnsignedInteger)      , type_classes$math),
+    list('pi'  , 'positive integer', list(isUnsignedInteger)      , type_classes$math),
+    list('ni'  , 'negative integer', list(isNegativeInteger)      , type_classes$math),
+
     list('ur'  , 'unsigned real'   , list(isUnsignedReal)         , type_classes$math),
+    list('pr'  , 'positive real'   , list(isUnsignedReal)         , type_classes$math),
+    list('nr'  , 'negative real'   , list(isNegativeReal)         , type_classes$math),
+
     list('t'  , 'table'            , list(is.table)                 , type_classes$data_structure),
     list('w'   , 'warning'         , list(isWarning)               , type_classes$error)
   )
@@ -86,7 +96,7 @@ FunctionParameterTypeFactory <- function() {
     NA
   }
 
-  getRecordedTypes <- function() dt
+  getRecordedTypes <- function() copy(dt)
 
   checkSuffix <- function(suffix_s_1) suffix_s_1[1] %in% dt$suffix
 

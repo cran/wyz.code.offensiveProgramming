@@ -8,7 +8,7 @@ getSampleFiles <- function(foldername_s) {
   list.files(src_folders, '*.R', recursive = TRUE, full.names = TRUE)
 }
 
-sf <- getSampleFiles('fun-defs')
+sf <- getSampleFiles('frt-defs')
 .sf <- sapply(sf, source, encoding = "UTF-8")
 
 executeControl <- function(filename_s) {
@@ -28,8 +28,8 @@ executeControl <- function(filename_s) {
 
 rv <- sapply(sf, executeControl, simplify = FALSE, USE.NAMES = FALSE)
 
-# bad <- Filter(function(e) e$status == FALSE, rv)
-# print(bad)
+bad <- Filter(function(e) e$status == FALSE, rv)
+print(bad)
 
 test_that("verifyFunctionReturnTypesDefinition", {
 

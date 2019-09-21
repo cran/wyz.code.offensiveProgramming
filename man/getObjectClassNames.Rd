@@ -8,11 +8,11 @@ see \code{is.object}).
 )
 }
 \usage{
-getObjectClassNames(object_)
-hasMainClass(object_, classname_s_1)
+getObjectClassNames(object_o_1)
+hasMainClass(object_o_1, classname_s_1)
 }
 \arguments{
-\item{object_}{ the object to analyze. }
+\item{object_o_1}{ the object to analyze. }
 \item{classname_s_1}{ the class to match the \code{classname} entry of the
 returned value of \code{getObjectClassNames). } }
 }

@@ -2,7 +2,7 @@ context("runFunction")
 
 source('pathResolver.R')
 
-source(file.path(computeRootPath(), 'code-samples/fun-defs/good/partial/AdditionFI_Partial.R'))
+source(file.path(computeRootPath(), 'code-samples/frt-defs/good/partial/AdditionFI_Partial.R'))
 
 results <- data.table(
   unnamed_args = c(rep(TRUE, 15)),

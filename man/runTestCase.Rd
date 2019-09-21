@@ -32,7 +32,7 @@ Refer to \code{\link{defineEvaluationModes}}
 \examples{
 ##---- typical case ----
 library('data.table')
-source(system.file('code-samples/full-instrumentation/AdditionTCFI_G1.R',
+source(system.file('code-samples/both-defs/good/full/AdditionTCFI_G1.R',
                    package = 'wyz.code.offensiveProgramming'))
 em <- EvaluationMode('type_checking_enforcement')
 runTestCase(AdditionTCFI_G1(), c(3, 5, 7), em)

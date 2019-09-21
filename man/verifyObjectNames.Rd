@@ -46,7 +46,7 @@ Refer to \code{\link{verifyClassName}}and \code{\link{verifyFunctionName}}.
 \examples{
 ##---- typical case ----
 library('data.table')
-source(system.file('code-samples/fun-defs/good/full/AdditionFI.R',
+source(system.file('code-samples/frt-defs/good/full/AdditionFI.R',
                    package = 'wyz.code.offensiveProgramming'))
 fi <- AdditionFI()
 print(verifyObjectNames(fi))

@@ -1,6 +1,10 @@
-import(data.table)
-importFrom("methods", "formalArgs", "getMethod", "is", "new")
+import("data.table")
+import("R6")
+import("stringr")
+importFrom("lubridate", "is.Date", "is.POSIXct", "is.POSIXlt")
+importFrom("methods", "formalArgs", "getMethod", "is", "new", ".hasSlot")
 importFrom("utils", "methods")
+importFrom("tidyr", "separate")
 export(
   defineEvaluationModes,
   defineFunctionReturnTypesParameterName,
@@ -10,17 +14,19 @@ export(
   FunctionParameterTypeFactory,
   getEllipsisName,
   getObjectClassNames,
-  #getObjectFunctionArguments,
-  #getObjectFunctionNames,
-  #getRClassTypicalFunctionNames,
-  getRObjectClassKind,
+  getObjectFunctionArgumentNames,
+  getObjectFunctionNames,
+  getClassTypicalFunctionNames,
+  getObjectClassKind,
   hasMainClass,
+  isAuditable,
   # matchFunctionArguments,
   packageFunctionsInformation,
   retrieveFactory,
   retrieveFunctionArguments,
   retrieveFunctionArgumentNames,
   retrieveFunctionReturnTypes,
+  #retrieveSupportedObjectInformation,
   retrieveTestCaseDefinitions,
   runFunction,
   runTransientFunction,

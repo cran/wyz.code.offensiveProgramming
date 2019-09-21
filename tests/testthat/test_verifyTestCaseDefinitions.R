@@ -8,7 +8,7 @@ getSampleFiles <- function(foldername_s) {
   list.files(src_folders, '*.R', recursive = TRUE, full.names = TRUE)
 }
 
-sf <- getSampleFiles('tc-defs')
+sf <- getSampleFiles('tcd-defs')
 .sf <- sapply(sf, source, encoding = "UTF-8")
 
 

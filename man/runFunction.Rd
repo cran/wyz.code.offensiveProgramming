@@ -36,7 +36,7 @@ Refer to \code{\link{FunctionParameterTypeFactory}} and \code{\link{runFunction}
 \examples{
 ##---- typical case ----
 library('data.table')
-source(system.file('code-samples/fun-defs/good/full/AdditionFI.R',
+source(system.file('code-samples/frt-defs/good/full/AdditionFI.R',
                    package = 'wyz.code.offensiveProgramming'))
 fi <- AdditionFI()
 runFunction(fi, 'addDouble', list(34, 44.6), EvaluationMode(defineEvaluationModes()[1]))

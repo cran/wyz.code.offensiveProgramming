@@ -16,8 +16,5 @@ generateWarning.Addition_S3_NoGeneric <- function(x_ = 0L) 1:3 + 1:7 + x_
 
 generateError.Addition_S3_NoGeneric <- function() stop('generated error')
 
-methods(class = 'Addition_S3_NoGeneric')
 
-print(addNumeric.Addition_S3_NoGeneric(3, 4.1))
-print(addDouble.Addition_S3_NoGeneric(3, 4.1))
 

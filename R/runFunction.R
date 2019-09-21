@@ -31,7 +31,7 @@ runFunction <- function(object_o_1, functionName_s_1, arguments_l,
   s$function_return_type_check <- rbindlist(list(b))
   if (evaluationMode_o_1$is(modes[2])) return(s)
 
-  fa <- getObjectFunctionArguments(object_o_1)
+  fa <- getObjectFunctionArgumentNames(object_o_1)
   mfa <- matchFunctionArguments(arguments_l, fa[[functionName_s_1]],
                                 functionParameterTypeFactory_o_1)
   pcv <- all(mfa$validity)

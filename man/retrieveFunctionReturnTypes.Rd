@@ -31,9 +31,9 @@ Refer to \code{\link{defineEvaluationModes}}
 \examples{
 ##---- typical case ----
 library('data.table')
-source(system.file('code-samples/no-instrumentation/Addition.R',
+source(system.file('code-samples/no-defs/Addition.R',
                    package = 'wyz.code.offensiveProgramming'))
-source(system.file('code-samples/fun-defs/good/full/AdditionFI.R',
+source(system.file('code-samples/frt-defs/good/full/AdditionFI.R',
                    package = 'wyz.code.offensiveProgramming'))
 retrieveFunctionReturnTypes(AdditionFI()) # works, renders a data.table
 retrieveFunctionReturnTypes(Addition()) # fails, renders a list
