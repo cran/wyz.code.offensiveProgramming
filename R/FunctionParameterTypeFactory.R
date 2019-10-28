@@ -15,25 +15,57 @@ FunctionParameterTypeFactory <- function() {
   isWarning <- function(x_) 'warning' %in% class(x_)
   isError <- function(x_) 'error' %in% class(x_)
 
-  isPureBoolean <- function(o_1_) is.logical(o_1_) && !is.na(o_1_)
+  isPureBoolean <- function(o_1_) {
+    if (!is.logical(o_1_)) return(FALSE)
+    if (length(o_1_) == 0) return(TRUE)
+    all(is.na(o_1_) == FALSE)
+  }
 
-  isPureComplex <- function(o_1_) is.complex(o_1_) && !is.na(o_1_)
+  isPureComplex <- function(o_1_) {
+    if (!is.complex(o_1_)) return(FALSE)
+    if (length(o_1_) == 0) return(TRUE)
+    all(is.na(o_1_) == FALSE) && all(is.infinite(o_1_) == FALSE)
+  }
 
-  isPureInteger <- function(o_1_) is.numeric(o_1_) &&  !is.double(o_1_)
+  isPureInteger <- function(o_1_) {
+    if (!is.numeric(o_1_)) return(FALSE)
+    if (length(o_1_) == 0) return(typeof(o_1_) == 'integer')
+    all(is.double(o_1_) == FALSE)
+  }
 
-  isPureMathInteger <- function(o_1_) isPureInteger(o_1_) && !is.na(o_1_)
+  isPureMathInteger <- function(o_1_) {
+    if (!isPureInteger(o_1_)) return(FALSE)
+    if (length(o_1_) == 0) return(TRUE)
+    !is.na(o_1_[1]) && !is.infinite(o_1_[1])
+  }
 
-  isPureReal <- function(o_1_) is.double(o_1_) && !is.na(o_1_)
+  isPureReal <- function(o_1_) {
+    if (!is.double(o_1_)) return(FALSE)
+    if (length(o_1_) == 0) return(TRUE)
+    all(is.na(o_1_[1]) == FALSE) && all(is.infinite(o_1_) == FALSE)
+  }
 
-  isUnsignedReal <- function(o_1_) isPureReal(o_1_) && o_1_ >= 0.0
+  isPositiveReal <- function(o_1_) isPureReal(o_1_) && all(o_1_ >= 0.0)
 
-  isNegativeReal <- function(o_1_) isPureReal(o_1_) && o_1_ <= 0.0
+  isNegativeReal <- function(o_1_) isPureReal(o_1_) && all(o_1_ <= 0.0)
 
-  isUnsignedInteger <- function(o_1_) isPureMathInteger(o_1_) && o_1_ >= 0L
+  isStrictlyPositiveReal <- function(o_1_) isPureReal(o_1_) && all(o_1_ > 0.0)
 
-  isNegativeInteger <- function(o_1_) isPureMathInteger(o_1_) && o_1_ <= 0L
+  isStrictlyNegativeReal <- function(o_1_) isPureReal(o_1_) && all(o_1_ < 0.0)
 
-  isString <- function(o_1_) is.character(o_1_) && !is.na(o_1_)
+  isPositiveInteger <- function(o_1_) isPureMathInteger(o_1_) && all(o_1_ >= 0L)
+
+  isStrictlyPositiveInteger <- function(o_1_) isPureMathInteger(o_1_) && all(o_1_ > 0L)
+
+  isNegativeInteger <- function(o_1_) isPureMathInteger(o_1_) && all(o_1_ <= 0L)
+
+  isStrictlyNegativeInteger <- function(o_1_) isPureMathInteger(o_1_) && all(o_1_ < 0L)
+
+  isString <- function(o_1_) {
+    if (!is.character(o_1_)) return(FALSE)
+    if (length(o_1_) == 0) return(TRUE)
+    all(is.na(o_1_) == FALSE)
+  }
 
   allowedSuffixes <- list(
     list('a'   , 'array'        , list(is.array)                   , type_classes$data_structure),
@@ -74,16 +106,20 @@ FunctionParameterTypeFactory <- function() {
 
     list('ra'  , 'raw'             , list(is.raw)                  , type_classes$basic),
 
-    list('ui'  , 'unsigned integer', list(isUnsignedInteger)      , type_classes$math),
-    list('pi'  , 'positive integer', list(isUnsignedInteger)      , type_classes$math),
+    list('ui'  , 'unsigned integer', list(isPositiveInteger)      , type_classes$math),
+    list('pi'  , 'positive integer', list(isPositiveInteger)      , type_classes$math),
     list('ni'  , 'negative integer', list(isNegativeInteger)      , type_classes$math),
+    list('spi' , 'strictly positive integer', list(isStrictlyPositiveInteger), type_classes$math),
+    list('sni' , 'strictly negative integer', list(isStrictlyNegativeInteger), type_classes$math),
 
-    list('ur'  , 'unsigned real'   , list(isUnsignedReal)         , type_classes$math),
-    list('pr'  , 'positive real'   , list(isUnsignedReal)         , type_classes$math),
+    list('ur'  , 'unsigned real'   , list(isPositiveReal)         , type_classes$math),
+    list('pr'  , 'positive real'   , list(isPositiveReal)         , type_classes$math),
     list('nr'  , 'negative real'   , list(isNegativeReal)         , type_classes$math),
+    list('spr' , 'strictly positive real', list(isStrictlyPositiveReal), type_classes$math),
+    list('snr' , 'strictly negative real', list(isStrictlyNegativeReal), type_classes$math),
 
     list('t'  , 'table'            , list(is.table)                 , type_classes$data_structure),
-    list('w'   , 'warning'         , list(isWarning)               , type_classes$error)
+    list('w'  , 'warning'         , list(isWarning)               , type_classes$error)
   )
 
   suffix <- NULL # data.table NSE issue with Rcmd check

@@ -1,8 +1,8 @@
-9b3e113750054864daebf4aa467e1f98 *DESCRIPTION
-bd6ba4055453dd0221cfa4377d8e59ac *NAMESPACE
-fb1eefa925398075bcaf3bacc8edc4be *R/EvaluationMode.R
-2088cea2446cf6a190f781238788c73a *R/FunctionParameterName.R
-f156e383f76a9f7bdfc2e8678127dc7f *R/FunctionParameterTypeFactory.R
+3765e425594c86edb12fd2c12efafdb6 *DESCRIPTION
+a8181c606bcd59243f26e67d9f755628 *NAMESPACE
+7d7e6c14db27910bfdaab50b0638b3d6 *R/EvaluationMode.R
+d160a977624ac84f4c8656c9707fe8ef *R/FunctionParameterName.R
+1e4237e69cdb15f98db481490a579241 *R/FunctionParameterTypeFactory.R
 a0c3a7d855cff89bb2b6e0a2590c2142 *R/TestCaseDefinition.R
 9d19e7892c70a9c584bbdd58c950a03c *R/defineEvaluationModes.R
 0a375057041b667907f78f78a4564cb9 *R/defineFunctionReturnTypesParameterName.R
@@ -27,7 +27,7 @@ fc857278201bf423d2aac392d1d55e97 *R/retrieveFunctionReturnTypes.R
 0900281cc991f7eaaeb7cafb25af0187 *R/retrieveTestCaseDefinitions.R
 19a23f9c0f23e8ba4b6a3defa52df1c3 *R/retrieveTestCaseDescriptions.R
 178fb12278da4174ff9c2b9443943960 *R/runFunction.R
-bd3aead3e343742027e710c969008f1a *R/runTestCase.R
+76d72e44ef1818715a425b81dae34e10 *R/runTestCase.R
 d740c23618bd214ed37d89ef9d38f952 *R/runTransientFunction.R
 d9abb1457509dedcb63de35778761c88 *R/verifyClassName.R
 ddfc3b629e3229d207a9a4ce7d540c3b *R/verifyFunctionName.R
@@ -35,7 +35,7 @@ ddfc3b629e3229d207a9a4ce7d540c3b *R/verifyFunctionName.R
 7c7faf5607a34aef59ef0efdd462919e *R/verifyName.R
 777dfa1baf739b0b9e4d471f23e57c5a *R/verifyObjectNames.R
 16d7579b1f8df5d1b7b3003429e0c4ea *R/verifyTestCaseDefinitions.R
-f95c1b54e1881bc8e458afbc713368fe *build/partial.rdb
+f927e47ffbf6a56de963020f12b29e36 *build/partial.rdb
 164b3ee5dc168c895733ed22c7a8cd8e *build/vignette.rds
 c2ad87f69656dfd1717bae3fc1abd5c9 *inst/code-samples/both-defs/good/full/AdditionTCFIG1.R
 5a8b83ea6d32a17f673c3b2f00591641 *inst/code-samples/both-defs/good/full/AdditionTCFI_G1.R
@@ -57,13 +57,9 @@ f4ed918d38627cc49613af3fbe7600fd *inst/code-samples/frt-defs/bad/AdditionFI_W1.R
 9b16a783e6738fa4004e876fea8e6c2b *inst/code-samples/frt-defs/good/full/AdditionFI_.R
 fa3a54ac72a425c7c1069081e3f5fc2e *inst/code-samples/frt-defs/good/partial/AdditionFIPartial.R
 f2b288927af535082a7793f70de2d0b0 *inst/code-samples/frt-defs/good/partial/AdditionFI_Partial.R
-c2ad87f69656dfd1717bae3fc1abd5c9 *inst/code-samples/full-instrumentation/AdditionTCFIG1.R
-fa3a54ac72a425c7c1069081e3f5fc2e *inst/code-samples/fun-defs/good/partial/AdditionFIPartial.R
 003e30f2a4b6a1431848d9dfcc8a4391 *inst/code-samples/no-defs/Addition.R
 1cef6670bb8aa6a447e7a3cfb274b2b9 *inst/code-samples/no-defs/Addition_S3.R
 7c66ca28a12350e585576fb1e1a69d69 *inst/code-samples/no-defs/Addition_S3_NoGeneric.R
-003e30f2a4b6a1431848d9dfcc8a4391 *inst/code-samples/no-instrumentation/Addition.R
-fe80e9bf4cd3029516c2accaccfa1047 *inst/code-samples/tc-defs/good/partial/AdditionTCPartial.R
 a7eee1d5e79cdd21d0caa3831a8818c2 *inst/code-samples/tcd-defs/bad/AdditionTCW1.R
 e13614e1279a54d242d79454efbc0817 *inst/code-samples/tcd-defs/bad/AdditionTCW2.R
 4f9d992e4a62f8fc7b461fa702ae9824 *inst/code-samples/tcd-defs/bad/AdditionTCW3.R
@@ -81,9 +77,9 @@ aa33abdc563251228d6f164173a5f63a *inst/code-samples/tcd-defs/good/full/AdditionT
 fe80e9bf4cd3029516c2accaccfa1047 *inst/code-samples/tcd-defs/good/partial/AdditionTCPartial.R
 a26874cd973786c67f0171584ad60aa9 *inst/code-samples/tcd-defs/good/partial/AdditionTC_Partial.R
 81aa3d89115c183bdabbdb98cdabd513 *inst/doc/wyz.code.offensiveProgramming.R
-93b72e7a5f1d1977c7783dfb75d73134 *inst/doc/wyz.code.offensiveProgramming.Rmd
-42075f1fb37c1635f2614ce3b95322bc *inst/doc/wyz.code.offensiveProgramming.html
-98353e07c471ae28194ab6560d4b3a7c *man/EvaluationMode.Rd
+b2bd5e08e7b3e47b1dc9338daf447d25 *inst/doc/wyz.code.offensiveProgramming.Rmd
+54c0106a95a8e4a759d384438c36543b *inst/doc/wyz.code.offensiveProgramming.html
+a3817d5e2918a1250358b3941bffe98f *man/EvaluationMode.Rd
 0c4fe846fd68347198dd32f7fbbc6d68 *man/FunctionParameterName.Rd
 91fe570796fc6b5e46af46267dd2929f *man/FunctionParameterTypeFactory.Rd
 2a64fbee53a3a8d14ecb3456cac4c49d *man/TestCaseDefinition.Rd
@@ -99,6 +95,7 @@ dad7e373b4d7f3143bf715891ec8bf23 *man/defineTestCaseDefinitionsParameterName.Rd
 627fbdf59bd6308c92ba879329fcffa5 *man/isAuditable.Rd
 9132b42d1cbe7c728bec3ae17f419799 *man/packageFunctionsInformation.Rd
 93dcd866dbe10c53d8602689ed4de98e *man/print.EvaluationMode.Rd
+bf150db2e50e61946102826e7899806e *man/print.FunctionParameterName.Rd
 7f0ae5567e6b519185b2f4a5c336122e *man/print.TestCaseDefinition.Rd
 1b647fca630154d966d8026f964ea535 *man/retrieveFactory.Rd
 92131a89bb21699b3619000a52faa000 *man/retrieveFunctionArguments.Rd
@@ -116,7 +113,7 @@ ee16be8a2cf7e2481d23b21c716be74a *man/runTransientFunction.Rd
 fdb00d9a270d241ad4bcd1241c7c59e6 *tests/testthat.R
 209897031182b60d2982f99d35d78999 *tests/testthat/pathResolver.R
 185c15a2360e81480fe8eb7603d5ae94 *tests/testthat/test_EvaluationMode.R
-58022227bd4ba118c991b724ef9e24c9 *tests/testthat/test_FunctionParameterName.R
+fd02a3d0e3d2155d6c5091206a3ba6af *tests/testthat/test_FunctionParameterName.R
 ece5458a585aa382777509592f96815e *tests/testthat/test_FunctionParameterTypeFactory.R
 ce998ed62cd7f5bf0a1a5ea3038202e4 *tests/testthat/test_TestCaseDefinition.R
 bc5f536921dfbff5178ee6ebb312ab8c *tests/testthat/test_defineEvaluationModes.R
@@ -145,4 +142,5 @@ d6a33fe655f01c01682a1dcec09e0044 *tests/testthat/test_verifyFunctionReturnTypesD
 ba76b9f52b727c7fd9372eddf42d6aa0 *tests/testthat/test_verifyName.R
 a7b9a1de05c5af44b84d027092043fa6 *tests/testthat/test_verifyObjectNames.R
 031815fe8666cb1789ce6ca5d14e46f8 *tests/testthat/test_verifyTestCaseDefinitions.R
-93b72e7a5f1d1977c7783dfb75d73134 *vignettes/wyz.code.offensiveProgramming.Rmd
+91315da7238f7fbb4e195b34b8cfa532 *vignettes/op-hexsticker-transparent.png
+b2bd5e08e7b3e47b1dc9338daf447d25 *vignettes/wyz.code.offensiveProgramming.Rmd

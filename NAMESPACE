@@ -21,7 +21,7 @@ export(
   getObjectClassKind,
   hasMainClass,
   isAuditable,
-  # matchFunctionArguments,
+  #matchFunctionArguments,
   packageFunctionsInformation,
   retrieveFactory,
   retrieveFunctionArguments,
@@ -41,4 +41,9 @@ export(
   verifyObjectNames,
   verifyTestCaseDefinitions
 )
+
+S3method(print, EvaluationMode)
+S3method(print, FunctionParameterName)
+S3method(print, TestCaseDefinition)
+
 

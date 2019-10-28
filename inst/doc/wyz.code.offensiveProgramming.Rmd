@@ -14,6 +14,8 @@ body {
 text-align: justify}
 </style>
 
+<image src='op-hexsticker-transparent.png' alt='offensive programming' style='width:30%'/>
+
 ```{r setup, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
@@ -34,6 +36,16 @@ Get access to [Offensive programming book](https://neonira.github.io/offensivePr
 # Releases 
 
 Latest release replaces fully olders ones, that are now considered obsoletes. Keep the pace, and  upgrade your packages if you do not use this version or a higher one!
+
+
+## 1.1.14
+
+Main improvements are 
+
+1. Added print methods for FunctionParameterName, EvaluationMode and TestCaseDefinition
+2. solved issue on FunctionParameterTypeFactory when dealing with empty vectors as parameters
+3. added new suffixes spi, sni, spr, snr
+4. removed folders full-instrumetation, no-instrumentation, tc-defs, frt-defs from inst/code-samples
 
 ## 1.1.10
 
