@@ -20,9 +20,26 @@ knitr::opts_chunk$set(collapse = TRUE, comment = "")
 source('vignette-common.R')
 ```
 
-Latest release replaces fully olders ones, that are now considered obsoletes. Keep the pace, and  upgrade your packages to use the latest version!
+Latest release replaces fully older ones, that are now considered obsoletes. Keep the pace, and  upgrade your packages to use the latest version!
 
-# Release 1.1.16
+# Release 1.1.17
+
+Main improvements are 
+
+1. removed environment variable `r citecode("OP_TYPE_FACTORY")` management. Replaced by `r citecode("options('op_type_factory')")`
+1. removed environment variable `r citecode("OP_AUDIT")` management. Replaced by `r citecode("options('op_audit')")`
+1. removed default valued argument `r citecode("functionParameterTypeFactory_o_1 = retrieveFactory()")` from many functions, as it is useless and can be directly accessed/determined by the code. 
+1. Changed field `r citeop('function_name')` to `r citeop('name')` in `r citefun('packageFunctionsInformation')` for consistency reasons
+1. `r citefun('packageFunctionsInformation')`  renamed to `r citefun('opInformation')`  to avoid name collisions through packages
+1. `r citefun('opInformation')` verified and upgraded
+1. R code - 34 exported functions, 6 internals
+1. manual pages - 36 files
+1. tests - 37 files, 450 tests
+1. vignettes - 1 file
+1. code as data - 39 files
+1. Timing: tests 8s, checks 36s
+
+# Release 1.1.16 - January 2020
 
 Main improvements are 
 
