@@ -2,13 +2,13 @@
 \alias{getEllipsisName}
 \title{Get ellipsis.}
 \description{
-Use method \code{getEllipsisName} to get ellipsis argument value.
+Get ellipsis argument name value.
 }
 \usage{
 getEllipsisName()
 }
 \value{
-A string with value \code{\ldots}, no more no less.
+A \emph{\code{string}} with value \bold{\code{"\ldots"}}, no more no less.
 }
 \author{
 \packageAuthor{wyz.code.offensiveProgramming}

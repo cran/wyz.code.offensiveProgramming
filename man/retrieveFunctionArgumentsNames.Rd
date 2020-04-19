@@ -2,8 +2,7 @@
 \alias{retrieveFunctionArgumentNames}
 \title{Retrieve Function Argument Names.}
 \description{
-Use method \code{retrieveFunctionArgumentNames} to get names of function or
-primitive arguments.
+Retrieve function argument names from a function or a primitive.
 }
 \usage{
 retrieveFunctionArgumentNames(fun_f_1)
@@ -13,12 +12,16 @@ retrieveFunctionArgumentNames(fun_f_1)
 }
 
 \value{
-A vector. See \code{\link{formalArgs}}.
+A \emph{\code{vector}} of \emph{\code{strings}} that are the function names.
 }
 \author{
 \packageAuthor{wyz.code.offensiveProgramming}
 
 Maintainer: \packageMaintainer{wyz.code.offensiveProgramming}
+}
+\seealso{
+See \bold{\emph{\code{\link{retrieveFunctionArguments}}}}.
+See \bold{\emph{\code{\link{formalArgs}}}}.
 }
 \examples{
 # typical test on a primitive

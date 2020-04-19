@@ -1,26 +1,24 @@
 \name{verifyTestCaseDefinitions}
 \alias{verifyTestCaseDefinitions}
-\title{
-Verify test case definitions
-}
+\title{Verify Test Case Definitions }
 \description{
-Test case definitions has to comply with many rules. This functions checks for this compliances
-and helps in dectection of uncompliances.
+Checks for test cases definition compliance and dectects uncompliances.
 }
 \usage{
 verifyTestCaseDefinitions(object_o_1, requiresFullInstrumentation_b_1 = TRUE)
 }
 \arguments{
-  \item{object_o_1}{The object to be considered}
-  \item{requiresFullInstrumentation_b_1}{a boolean stating if full instrumentation is required}
+  \item{object_o_1}{The \emph{\code{object}}to be considered}
+  \item{requiresFullInstrumentation_b_1}{a \emph{\code{boolean}} stating if
+  full instrumentation is required}
 }
 \details{
-When \code{requiresFullInstrumentation_b_1} is \code{TRUE}, each function must have an entry
-in the test case parameter definition. }
+When \code{requiresFullInstrumentation_b_1} is \emph{\code{TRUE}}, each function
+must have an entry in the test case parameter definition. }
 \value{
-A \code{list} with names
-\item{validity}{a single boolean value}
-\item{class}{the class name of the provided object}
+A \emph{\code{list}} with names
+\item{validity}{a single \emph{\code{boolean}}  value}
+\item{class}{the class name of the provided \emph{\code{object}}}
 \item{intent}{the stage of the failure, provides hint about the faced issue}
 \item{message}{some hints to resolve the issue(s).}
 }
@@ -30,7 +28,7 @@ A \code{list} with names
 Maintainer: \packageMaintainer{wyz.code.offensiveProgramming}
 }
 \seealso{
-Refer to \code{\link{defineTestCaseDefinitionsParameterName}}.
+Refer to \bold{\emph{\code{\link{defineTestCaseDefinitionsParameterName}}}}.
 }
 \examples{
 ##---- typical case ----

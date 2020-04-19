@@ -1,18 +1,16 @@
 \name{verifyFunctionArguments}
 \alias{verifyFunctionArguments}
-\title{Function verifyFunctionArguments}
-\description{
-Use this function to verify function arguments.
-}
+\title{Verify Function Arguments}
+\description{ Use this function to verify function arguments. }
 \usage{
 verifyFunctionArguments(arguments_l, abort_b_1 = TRUE, verbosity_b_1 = FALSE)
 }
 \arguments{
-\item{arguments_l}{An unconstrained list, representing the arguments. Should
+\item{arguments_l}{An unconstrained \emph{\code{list}}, representing the arguments. Should
 always result from a call to \code{mget(ls())}.}
-\item{abort_b_1}{A single boolean value stating if processing abortion should
+\item{abort_b_1}{A single \emph{\code{boolean}} value stating if processing abortion should
 be triggered in case of error}
-\item{verbosity_b_1}{A single boolean value.}
+\item{verbosity_b_1}{A single \emph{\code{boolean}} value.}
 }
 \details{
 This function allows to check all parameter types and values in a single
@@ -21,13 +19,13 @@ line of code.
 See examples below to know how to put this function in action.
 }
 \value{
-Value depends on parameter \code{abort_b_1} value.
+Returned value depends on parameter \bold{\code{abort_b_1}} value.
 
-When set to \code{TRUE}, any error will abort processing by issuing a call to
+When set to \emph{\code{TRUE}}, any error will abort processing by issuing a call to
 \code{\link{stop}} function.
 
-When set to \code{FALSE}, returned value is a boolean. It is \code{TRUE} only
-when no error have been detected. Otherwise \code{FALSE}.
+When set to \emph{\code{FALSE}}, returned value is a boolean. It is \emph{\code{TRUE}} only
+when no error have been detected. Otherwise \emph{\code{FALSE}}.
 }
 \author{
 \packageAuthor{wyz.code.offensiveProgramming}

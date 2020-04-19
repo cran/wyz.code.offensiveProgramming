@@ -1,7 +1,7 @@
 \name{print.TestCaseDefinition}
 \alias{print.TestCaseDefinition}
 \title{
-Print generic method for S3 class \code{TestCaseDefinition}
+Print generic method for S3 class \bold{\emph{\code{\link{TestCaseDefinition}}}}
 }
 \description{
 Prints the \code{TestCaseDefinition} data
@@ -11,7 +11,7 @@ Prints the \code{TestCaseDefinition} data
 }
 \arguments{
   \item{x}{
-    the \code{TestCaseDefinition} object to consider
+    the \bold{\emph{\code{\link{TestCaseDefinition}}}} \emph{\code{object}} to consider
   }
   \item{\ldots}{
     any other argument, passed to print.

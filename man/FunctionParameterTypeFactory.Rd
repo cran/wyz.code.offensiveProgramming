@@ -11,15 +11,15 @@ FunctionParameterTypeFactory()
 }
 \details{
 Many common types are already recorded and available through the factory. Use the function
-\code{getRecordedTypes}  to get more insight.
+\emph{\code{getRecordedTypes}} to get more insight.
 
-If you desire to verify a type instrumentation, just use \code{checkSuffix} function.
-If you want to add an instrumentation for a new type, use \code{addSuffix} function.
+If you desire to verify a type instrumentation, just use \emph{\code{checkSuffix}} function.
+If you want to add an instrumentation for a new type, use \emph{\code{addSuffix}} function.
 
 See examples below for more hands-on approach.
 }
 \value{
-An object that is an \R \code{environment}.
+An \emph{\code{object}} that is an \R \code{environment}.
 }
 \author{
 \packageAuthor{wyz.code.offensiveProgramming}

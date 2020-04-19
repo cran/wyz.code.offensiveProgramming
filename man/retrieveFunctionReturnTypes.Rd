@@ -1,21 +1,20 @@
 \name{retrieveFunctionReturnTypes}
 \alias{retrieveFunctionReturnTypes}
-\title{
-Retrieve function return types }
+\title{ Retrieve function return types }
 \description{
-From an instrumented class, retrieve the function return types definition.
+Retrieve the function return type definitions from an \emph{\code{object}}.
 }
 \usage{
 retrieveFunctionReturnTypes(object_o_1)
 }
 \arguments{
-  \item{object_o_1}{the object to consider}
+  \item{object_o_1}{the \emph{\code{object}} to consider}
 }
 \value{
 A polymorphic return that is either
-\item{a list}{as returned by the \code{\link{verifyObjectNames}} function}
-\item{another list}{as returned by the \code{\link{verifyFunctionReturnTypesDefinition}} function}
-\item{a data table}{the function parameter types definition as declared in the source class}
+\item{a \emph{\code{list}}}{as returned by the \bold{\emph{\code{\link{verifyObjectNames}}}} function}
+\item{another \emph{\code{list}}}{as returned by the \bold{\emph{\code{\link{verifyFunctionReturnTypesDefinition}}}} function}
+\item{a \emph{\code{data.table}}}{the function parameter types definition as declared in the source class}
 }
 \author{
 \packageAuthor{wyz.code.offensiveProgramming}
@@ -23,7 +22,7 @@ A polymorphic return that is either
 Maintainer: \packageMaintainer{wyz.code.offensiveProgramming}
 }
 \seealso{
-Refer to \code{\link{defineEvaluationModes}}
+Refer to \bold{\emph{\code{\link{defineEvaluationModes}}}}.
 }
 \examples{
 ##---- typical case ----

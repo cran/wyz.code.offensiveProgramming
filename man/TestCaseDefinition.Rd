@@ -1,26 +1,20 @@
 \name{TestCaseDefinition}
 \alias{TestCaseDefinition}
-\title{
-Test case definition
-}
-\description{
-Defines a test case
-}
+\title{ Test Case Definition }
+\description{ Defines a test case }
 \usage{
 TestCaseDefinition(params_l, expectedResult_, description_s_1)
 }
 \arguments{
-  \item{params_l}{ a list that holds the test case input values }
+  \item{params_l}{ a \emph{\code{list}} that holds the test case input values }
   \item{expectedResult_}{ test case expected result. This will be used to compare with
   function execution results}
-  \item{description_s_1}{ a single string, test case description
+  \item{description_s_1}{ a single entry character \emph{\code{vector}},
+  that is the test case description string
 }
-}
-\details{
-Test case definition takes sense only when intimately correlated with a function
 }
 \value{
-An object that is an \R \code{environment}.
+An \emph{\code{object}} that is an \R \emph{\code{environment}} class.
 }
 \author{
 \packageAuthor{wyz.code.offensiveProgramming}
@@ -28,7 +22,7 @@ An object that is an \R \code{environment}.
 Maintainer: \packageMaintainer{wyz.code.offensiveProgramming}
 }
 \seealso{
-Refer to \code{\link{FunctionParameterTypeFactory}}
+Refer to \bold{\emph{\code{\link{FunctionParameterTypeFactory}}}}
 }
 \examples{
 ##---- typical case ----

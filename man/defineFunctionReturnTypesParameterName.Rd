@@ -14,7 +14,7 @@ defineFunctionReturnTypesParameterName()
 Maintainer: \packageMaintainer{wyz.code.offensiveProgramming}
 }
 \seealso{
-Refer to \code{\link{EvaluationMode}}.
+Refer to \bold{\emph{\code{\link{EvaluationMode}}}}.
 }
 \examples{
 ##---- typical case ----

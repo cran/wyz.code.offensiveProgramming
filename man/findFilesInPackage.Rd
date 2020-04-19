@@ -8,11 +8,12 @@ Use function \bold{\code{findFilesInPackage}} to find files in package.
 findFilesInPackage(filenames_s, packageName_s_1)
 }
 \arguments{
-\item{filenames_s}{An unconstrained vector of string values.}
-\item{packageName_s_1}{A length-1 vector of string values.}
+\item{filenames_s}{An unconstrained vector of \emph{\code{string}} values.}
+\item{packageName_s_1}{A length-1 vector of \emph{\code{string}} values.}
 }
 \value{
-This function is vectorized. It returns a \code{list} with one entry for each file searched for.
+This function is vectorized. It returns a \emph{\code{list}}
+with one entry for each file searched for.
 }
 \author{
 \packageAuthor{wyz.code.offensiveProgramming}

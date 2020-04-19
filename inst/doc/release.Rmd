@@ -1,12 +1,12 @@
 ---
 title: "wyz.code.offensiveProgramming releases"
 author: "Fabien GELINEAU"
-date: "last update on 2020-01"
+date: "last update on 2020-04-19"
 output: 
   rmarkdown::html_vignette:
     css: style.css
     number_sections: true
-    toc: true
+    toc: false
 vignette: >
   %\VignetteIndexEntry{wyz.code.offensiveProgramming releases}
   %\VignetteEngine{knitr::rmarkdown}
@@ -21,6 +21,19 @@ source('vignette-common.R')
 ```
 
 Latest release replaces fully older ones, that are now considered obsoletes. Keep the pace, and  upgrade your packages to use the latest version!
+
+# Release 1.1.18
+
+Main improvements are 
+
+1. polished all `r citeit('R')` `r citefile('.Rd')` documentation files
+1. R code - `r citefigure(34)` exported functions, `r citefigure(6)` internals
+1. manual pages - `r citefigure(36)` files
+1. tests - `r citefigure(36)` files
+1. vignettes - `r citefigure(1)` files
+1. code as data - `r citefigure(39)` files
+1. Timing: tests 8s Duration: `r citefigure('7.2s')` for `r citefigure('450')` tests
+1. R CMD check results ─ wyz.code.offensiveProgramming 1.1.18 ─ Duration: `r citefigure('37.1s')` - 0 errors ✓ | 0 warnings ✓ | 0 notes ✓
 
 # Release 1.1.17
 
@@ -69,7 +82,7 @@ Main improvements are
 Main improvements are 
 
 1. Added many tests to work with `r citechar('RC')`, `r citechar('S3')`, `r citechar('S4')`, `r citechar('R6')` classes
-2. maintained higher code coverage higher than `r citeexr('99%')`
+2. maintained higher code coverage higher than `r citefigure('99%')`
 
 # Release 1.1.9
 
@@ -77,7 +90,7 @@ Main improvements are
 
 1. corrected many typographic errors in i/o with end-user
 2. completed unit tests
-3. enforced higher code coverage from `r citeexr('75%')` up to `r citeexr('99.28%')`
+3. enforced higher code coverage from `r citefigure('75%')` up to `r citefigure('99.28%')`
 4. changed many functions visibility from hidden `r comment('internal to package')` to visible `r comment('end-user available')`.
 5. completed documentation
 6. cleaned up package dependencies. 

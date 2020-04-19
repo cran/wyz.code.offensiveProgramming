@@ -10,14 +10,17 @@ Get the class kind of an \R object as a string.
 getObjectClassKind(object_o_1)
 }
 \arguments{
-  \item{object_o_1}{ the object to analyze. See \code{\link{is.object}}.}
+  \item{object_o_1}{ the \emph{\code{object}} to analyze. See
+  \bold{\emph{\code{\link{is.object}}}}.}
 }
 \value{
-A single \code{character} value, taken in set \code{"S3"}, \code{"S4"},
-\code{"RC"}, \code{"R6"}, \code{"environment"}, \code{"unknown"}.
+A single \emph{\code{character}} value, taken in set \emph{\code{"S3"}},
+\emph{\code{"S4"}},
+\emph{\code{"RC"}}, \emph{\code{"R6"}}, \emph{\code{"environment"}},
+\emph{\code{"unknown"}}.
 
-When provided \code{object_} is not an \R object, then value \code{NA_character_}
-is returned.
+When provided \emph{\code{object_}} is not an \R object, then value
+\emph{\code{NA_character_}} is returned.
 }
 \author{
 \packageAuthor{wyz.code.offensiveProgramming}

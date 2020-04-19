@@ -1,17 +1,17 @@
 \name{print.EvaluationMode}
 \alias{print.EvaluationMode}
 \title{
-Print generic method for S3 class \code{EvaluationMode}
+Print generic method for S3 class \bold{\emph{\code{\link{EvaluationMode}}}}
 }
 \description{
-Prints the \code{EvaluationMode} data
+Prints the \emph{\code{EvaluationMode}} data
 }
 \usage{
 \method{print}{EvaluationMode}(x, ...)
 }
 \arguments{
   \item{x}{
-    the \code{EvaluationMode} object to consider
+    the \code{EvaluationMode} \emph{\code{object}}  to consider
   }
   \item{\ldots}{
     any other argument, passed to print.

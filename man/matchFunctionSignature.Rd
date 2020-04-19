@@ -2,20 +2,20 @@
 \alias{matchFunctionSignature}
 \title{Retrieve Function Arguments.}
 \description{
-Use method \code{matchFunctionSignature} to match a function signature.
+Compare two functions signatures and tells if they are exactly the same.
 }
 \usage{
 matchFunctionSignature(aFunction_f_1, aFunctionTemplate_f_1 = function(){})
 }
 \arguments{
-\item{aFunction_f_1}{ a function or primitive. Not a string! }
-\item{aFunctionTemplate_f_1}{ a function or primitive to be used as model. Not a string! }
+\item{aFunction_f_1}{ a \emph{\code{function}} or \emph{\code{primitive}}. Not a string! }
+\item{aFunctionTemplate_f_1}{a \emph{\code{function}} or \emph{\code{primitive}}  to be used as model. Not a string! }
 }
 \value{
-A \code{boolean} value.
+A \emph{\code{boolean}} value.
 }
 \details{
-To get \code{TRUE} as result, function and function model must share exactly the
+To get \emph{\code{TRUE}} as result, function and function model must share exactly the
 sames attributes names and values, including default values if any used.
 }
 \author{

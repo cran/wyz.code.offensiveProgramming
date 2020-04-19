@@ -9,16 +9,16 @@ identifyOPInstrumentationLevel(object_o_1 = NULL,
                                methodName_s_1 = NA_character_)
 }
 \arguments{
-  \item{object_o_1}{ the object to be checked }
-  \item{methodName_s_1}{ the method to consider, if any. }
+  \item{object_o_1}{ the \emph{\code{object}} to be checked }
+  \item{methodName_s_1}{ the \emph{\code{function}} name to consider, if any. }
 }
 \value{
 A \code{list} with following names
-\item{offensive_programming}{a single boolean}
-\item{full_instrumentation}{a single boolean}
-\item{semantic_naming}{a single boolean}
-\item{function_return_type}{a single boolean}
-\item{test_case_definition}{a single boolean}
+\item{offensive_programming}{a single \emph{\code{boolean}}}
+\item{full_instrumentation}{a single \emph{\code{boolean}}}
+\item{semantic_naming}{a single \emph{\code{boolean}}}
+\item{function_return_type}{a single \emph{\code{boolean}}}
+\item{test_case_definition}{a single \emph{\code{boolean}}}
 }
 \author{
 \packageAuthor{wyz.code.offensiveProgramming}
@@ -26,7 +26,8 @@ A \code{list} with following names
 Maintainer: \packageMaintainer{wyz.code.offensiveProgramming}
 }
 \seealso{
-Refer to \code{\link{verifyClassName}}and \code{\link{verifyFunctionName}}.
+Refer to \bold{\emph{\code{\link{verifyClassName}}}} and
+\bold{\emph{\code{\link{verifyFunctionName}}}}.
 }
 \examples{
 ##---- typical case ----

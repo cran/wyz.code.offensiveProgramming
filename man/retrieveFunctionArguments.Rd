@@ -2,7 +2,7 @@
 \alias{retrieveFunctionArguments}
 \title{Retrieve Function Arguments.}
 \description{
-Use method \code{retrieveFunctionArguments} to get function or primitive arguments.
+Retrieve function arguments to get arguments from a function or a primitive.
 }
 \usage{
 retrieveFunctionArguments(fun_f_1)
@@ -10,14 +10,17 @@ retrieveFunctionArguments(fun_f_1)
 \arguments{
 \item{fun_f_1}{ a function or primitive. Not a string! }
 }
-
 \value{
-A pairlist. See \code{\link{formals}}.
+A \emph{\code{pairlist}}.
 }
 \author{
 \packageAuthor{wyz.code.offensiveProgramming}
 
 Maintainer: \packageMaintainer{wyz.code.offensiveProgramming}
+}
+\seealso{
+See \bold{\emph{\code{\link{retrieveFunctionArguments}}}}.
+See \bold{\emph{\code{\link{formalArgs}}}}.
 }
 \examples{
 # typical test on a primitive

@@ -10,11 +10,11 @@ Get the function names from a package name
 retrievePackageFunctionNames(packageName_s_1, libraryPath_s_1 = .libPaths()[1])
 }
 \arguments{
-  \item{packageName_s_1}{ the package name to seek for }
-  \item{libraryPath_s_1}{ the folder to look for }
+  \item{packageName_s_1}{ a \emph{\code{string}} that is the package name to seek for }
+  \item{libraryPath_s_1}{ a \emph{\code{string}} that is the folder to scrutinize }
 }
 \value{
-A \code{vector} of function names
+A \emph{\code{vector}} of function names
 }
 \author{
 \packageAuthor{wyz.code.offensiveProgramming}

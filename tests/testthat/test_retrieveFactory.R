@@ -22,6 +22,7 @@ r2 <- nrow(retrieveFactory()$getRecordedTypes()[suffix == 'xyz'])
 #cat('r2', r2, '\n')
 
 # set incorrect R variable - passed name not object
+options('op_audit' =  TRUE)
 setOptions('my_factory')
 r3 <- nrow(retrieveFactory()$getRecordedTypes()[suffix == 'xyz'])
 #cat('r3', r3, '\n')

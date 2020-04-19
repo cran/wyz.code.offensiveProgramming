@@ -3,8 +3,8 @@
 \alias{getClassTypicalFunctionNames}
 \title{Retrieve Function Names From Object}
 \description{
-Use method \code{getObjectFunctionNames} to get the function names of an object (
-see \code{is.object}).
+Retrieve function names of an object (
+see \bold{\emph{\code{\link{is.object}}}}).
 )
 }
 \usage{
@@ -13,16 +13,18 @@ getObjectFunctionNames(object_o_1, allNames_b_1 = FALSE)
 getClassTypicalFunctionNames(object_o_1)
 }
 \arguments{
-\item{object_o_1}{ the object to analyze. }
-\item{allNames_b_1}{ A boolean value. When \code{TRUE}, uses \code{getClassTypicalFunctionNames}
+\item{object_o_1}{ the \emph{\code{object}} to analyze. }
+\item{allNames_b_1}{ A \emph{\code{boolean}} value. When \emph{\code{TRUE}}, uses
+\bold{\emph{\code{\link{getClassTypicalFunctionNames}}}}
 to restrict the set of function names returned.}
 }
 \details{
-Function \code{getClassTypicalFunctionNames} gives back function names that are related to
+Function \bold{\emph{\code{\link{getClassTypicalFunctionNames}}}} gives back
+function names that are related to
 \R class style, and automatically added by \R to your class object.
 }
 \value{
-A \code{vector} of function names (\code{character}).
+A \emph{\code{vector}} of function names (\emph{\code{character}}).
 }
 \author{
 \packageAuthor{wyz.code.offensiveProgramming}

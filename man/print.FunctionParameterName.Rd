@@ -1,7 +1,7 @@
 \name{print.FunctionParameterName}
 \alias{print.FunctionParameterName}
 \title{
-Print generic method for S3 class \code{FunctionParameterName}
+Print generic method for S3 class \bold{\emph{\code{\link{FunctionParameterName}}}}
 }
 \description{
 Prints the \code{FunctionParameterName} data
@@ -11,7 +11,7 @@ Prints the \code{FunctionParameterName} data
 }
 \arguments{
   \item{x}{
-    the \code{FunctionParameterName} object to consider
+    the \code{FunctionParameterName} \emph{\code{object}}  to consider
   }
   \item{\ldots}{
     any other argument, passed to print.

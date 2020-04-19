@@ -13,16 +13,16 @@ verifyFunctionName(name_s = "aSimpleFunctionName", strictSyntax_b_1 = TRUE)
   \item{name_s}{
 The function name to be checked}
   \item{strictSyntax_b_1}{
-A boolean value. When \code{TRUE}, allowed character set is \code{[A-Za-z0-9]+}. A
+A boolean value. When \emph{\code{TRUE}}, allowed character set is \code{[A-Za-z0-9]+}. A
 function name must start with a lowercase letter. The name is required to be camel cased,
 although this cannot be checked.
 
-When \code{FALSE}, allowed character set is \code{[A-Za-z0-9_.]+}. Classic \R function
+When \emph{\code{FALSE}}, allowed character set is \code{[A-Za-z0-9_.]+}. Classic \R function
 naming applies.
 }
 }
 \value{
-A boolean value, either \code{TRUE} or \code{FALSE}
+A \bold{\code{boolean}} value, either \emph{\code{TRUE}} or \emph{\code{FALSE}}.
 }
 \author{
 \packageAuthor{wyz.code.offensiveProgramming}
@@ -30,7 +30,7 @@ A boolean value, either \code{TRUE} or \code{FALSE}
 Maintainer: \packageMaintainer{wyz.code.offensiveProgramming}
 }
 \seealso{
-Refer to \code{\link{defineEvaluationModes}}
+Refer to \bold{\emph{\code{\link{defineEvaluationModes}}}}.
 }
 \examples{
 ##---- typical case ----

@@ -1,7 +1,7 @@
 \name{retrieveFactory}
 \alias{retrieveFactory}
 \title{
-Retrieve factory
+Retrieve the type factory object
 }
 \description{
 As factory may be modified, this function allows you to make changes and to record them in
@@ -10,11 +10,12 @@ your own specialized type factory, to match various needs and ease reuse. }
 retrieveFactory()
 }
 \details{
-Retrieves a \code{\link{FunctionParameterTypeFactory}} from options variable named
-\code{op_type_factory} or provides a default type factory.
+Retrieves a \bold{\emph{\code{\link{FunctionParameterTypeFactory}}}}
+from options variable named
+\emph{\bold{\code{op_type_factory}}} or provides a default type factory.
 }
 \value{
-An \R object that is a \code{\link{FunctionParameterTypeFactory}}.
+An \R \emph{\code{object}} that is a \bold{\emph{\code{\link{FunctionParameterTypeFactory}}}}.
 }
 \author{
 \packageAuthor{wyz.code.offensiveProgramming}

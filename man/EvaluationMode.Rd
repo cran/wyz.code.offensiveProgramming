@@ -9,10 +9,11 @@ Class to define your evaluation mode}
 EvaluationMode(value_s_1 = defineEvaluationModes()[2])
 }
 \arguments{
-  \item{value_s_1}{ one string that must come from \code{\link{defineEvaluationModes}}}
+  \item{value_s_1}{ one \emph{\code{string}} that must come from
+  \bold{\emph{\code{\link{defineEvaluationModes}}}}}
 }
 \value{
-An object that is an \R \code{environment}.
+An \emph{\code{object}} that is an \R \code{environment}.
 }
 \author{
 \packageAuthor{wyz.code.offensiveProgramming}
@@ -20,7 +21,7 @@ An object that is an \R \code{environment}.
 Maintainer: \packageMaintainer{wyz.code.offensiveProgramming}
 }
 \seealso{
-Refer to \code{\link{defineEvaluationModes}}
+Refer to \bold{\emph{\code{\link{defineEvaluationModes}}}}
 }
 \examples{
 ##---- typical case ----

@@ -9,7 +9,7 @@ Define the paramater name to hold test case definitions
 defineTestCaseDefinitionsParameterName()
 }
 \value{
-A single string that is the parameter name to use.
+A single \emph{\code{string}} that is the parameter name to use.
 }
 \author{
 \packageAuthor{wyz.code.offensiveProgramming}
@@ -17,7 +17,8 @@ A single string that is the parameter name to use.
 Maintainer: \packageMaintainer{wyz.code.offensiveProgramming}
 }
 \seealso{
-Refer to \code{\link{EvaluationMode}}. See sibling \code{\link{EvaluationMode}}.
+Refer to \bold{\emph{\code{\link{EvaluationMode}}}}. See sibling
+\bold{\emph{\code{\link{EvaluationMode}}}}.
 }
 \examples{
 ##---- typical case ----

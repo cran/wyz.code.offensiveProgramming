@@ -3,19 +3,21 @@
 \title{
 Verify object names}
 \description{
-Easier output and more human friendly interface to \code{\link{verifyObjectNames}}
+Human readable output synthetized from
+\bold{\emph{\code{\link{verifyObjectNames}}}}
 }
 \usage{
 exploreObjectNamesVerification(object_o_1,
                                what_s_1 = c("names", "return type", "test cases", "*")[1])
 }
 \arguments{
-  \item{object_o_1}{ the object to be checked }
-  \item{what_s_1}{ a single string that expresses what you want to focus on, should start
+  \item{object_o_1}{ the \emph{\code{object}} to be checked }
+  \item{what_s_1}{ a single \emph{\code{string}} that expresses what you want to focus on, should start
   by one of \code{[nrt*} character. Star means show all. }
 }
 \value{
-The same value as \code{\link{verifyObjectNames}} is returned in \code{invisible} mode.
+The same value as \bold{\emph{\code{\link{verifyObjectNames}}}} is returned
+in \code{invisible} mode.
 
 It adds \code{stdout} output to give very short synthesis about object names and content.
 }
@@ -25,7 +27,8 @@ It adds \code{stdout} output to give very short synthesis about object names and
 Maintainer: \packageMaintainer{wyz.code.offensiveProgramming}
 }
 \seealso{
-Refer to \code{\link{verifyClassName}}and \code{\link{verifyFunctionName}}.
+Refer to \bold{\emph{\code{\link{verifyClassName}}}} and
+\bold{\emph{\code{\link{verifyFunctionName}}}}.
 }
 \examples{
 ##---- typical case ----

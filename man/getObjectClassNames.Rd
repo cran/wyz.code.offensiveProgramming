@@ -3,8 +3,8 @@
 \alias{hasMainClass}
 \title{Retrieve Function Arguments.}
 \description{
-Use method \code{getObjectClassNames} to get the class names of an object (
-see \code{is.object}).
+Retrieve the class names of an object (
+see \bold{\emph{\code{is.object}}}).
 )
 }
 \usage{
@@ -12,15 +12,17 @@ getObjectClassNames(object_o_1)
 hasMainClass(object_o_1, classname_s_1)
 }
 \arguments{
-\item{object_o_1}{ the object to analyze. }
-\item{classname_s_1}{ the class to match the \code{classname} entry of the
-returned value of \code{getObjectClassNames). } }
+\item{object_o_1}{ the \emph{\code{object}} to analyze. }
+\item{classname_s_1}{ a \emph{\code{string}} that is the class name to match
+the \emph{\code{classname}} entry
+returned by  \emph{\code{\link{getObjectClassNames}}}. }
 }
-
 \value{
-A \code{list} with two character entries. First one is named \code{classname},
+A \emph{\code{list}} with two character entries. First one is named
+\emph{\code{classname}},
 provides the main classname (the one found in first position). Second one is named
-\code{classnames}, provides all the class names born by the \code{object_}.
+\emph{\code{classnames}}, provides all the class names born by the
+\emph{\code{object}}.
 }
 \author{
 \packageAuthor{wyz.code.offensiveProgramming}

@@ -9,7 +9,7 @@ Get all predefined evaluation mode names
 defineEvaluationModes()
 }
 \value{
-A vector of strings, each representing a reusable evaluation mode name.
+A \emph{\code{vector}} of strings, each representing a reusable evaluation mode name.
 }
 \author{
 \packageAuthor{wyz.code.offensiveProgramming}
@@ -17,7 +17,7 @@ A vector of strings, each representing a reusable evaluation mode name.
 Maintainer: \packageMaintainer{wyz.code.offensiveProgramming}
 }
 \seealso{
-Refer to \code{\link{EvaluationMode}}.
+Refer to \bold{\emph{\code{\link{EvaluationMode}}}}.
 }
 \examples{
 ##---- typical case ----
