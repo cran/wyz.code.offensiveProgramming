@@ -14,6 +14,10 @@ FunctionParameterTypeFactory <- function() {
 
   isWarning <- function(o_1l_) 'warning' %in% class(o_1l_)
   isError <- function(o_1l_) 'error' %in% class(o_1l_)
+  isDate <- function(o_1l_) is(o_1l_, 'Date')
+
+  isPOSIXct <- function(o_1l_) inherits(o_1l_, 'POSIXct')
+  isPOSIXlt <- function(o_1l_) inherits(o_1l_, 'POSIXlt')
 
   isPureBoolean <- function(o_1l_) {
     if (!is.logical(o_1l_)) return(FALSE)
@@ -45,6 +49,9 @@ FunctionParameterTypeFactory <- function() {
     all(is.na(o_1l_[1]) == FALSE) && all(is.infinite(o_1l_) == FALSE)
   }
 
+  # ease reuse
+  generateIsOfClass <- function(classname_s_1) function(o_1l_) is(o_1l_, classname_s_1)
+
   isPositiveReal <- function(o_1l_) isPureReal(o_1l_) && all(o_1l_ >= 0.0)
 
   isNegativeReal <- function(o_1l_) isPureReal(o_1l_) && all(o_1l_ <= 0.0)
@@ -60,6 +67,8 @@ FunctionParameterTypeFactory <- function() {
   isNegativeInteger <- function(o_1l_) isPureMathInteger(o_1l_) && all(o_1l_ <= 0L)
 
   isStrictlyNegativeInteger <- function(o_1l_) isPureMathInteger(o_1l_) && all(o_1l_ < 0L)
+
+  isCantorReal <- function(o_1l_) isPureReal(o_1l_) && all(o_1l_ >= 0L) && all(o_1l_ <= 1L)
 
   isString <- function(o_1l_) {
     if (!is.character(o_1l_)) return(FALSE)
@@ -83,11 +92,11 @@ FunctionParameterTypeFactory <- function() {
 
     list('ca'  , 'call'         , list(is.call)                    , type_classes$language),
 
-    list('da'  , 'date'         , list(lubridate::is.Date)         , type_classes$date),
-    list('dc'  , 'POSIXct'      , list(lubridate::is.POSIXct)      , type_classes$date),
+    list('da'  , 'date'         , list(isDate)                     , type_classes$date),
+    list('dc'  , 'POSIXct'      , list(isPOSIXct)                 , type_classes$date),
     list('df'  , 'data.frame'   , list(is.data.frame)              , type_classes$data_structure),
     list('dt'  , 'data.table'   , list(data.table::is.data.table)  , type_classes$data_structure),
-    list('dl'  , 'POSIXlt'      , list(lubridate::is.POSIXlt)      , type_classes$date),
+    list('dl'  , 'POSIXlt'      , list(isPOSIXlt)                 , type_classes$date),
     list('dm'  , 'double-math'  , list(isPureReal)                 , type_classes$math),
     list('e'   , 'environment'  , list(is.environment)             , type_classes$basic),
     list('ex'  , 'expression'   , list(is.expression)              , type_classes$language),
@@ -112,6 +121,7 @@ FunctionParameterTypeFactory <- function() {
     list('spi' , 'strictly positive integer', list(isStrictlyPositiveInteger), type_classes$math),
     list('sni' , 'strictly negative integer', list(isStrictlyNegativeInteger), type_classes$math),
 
+    list('cr'  , 'cantor real'     , list(isCantorReal)           , type_classes$math),
     list('ur'  , 'unsigned real'   , list(isPositiveReal)         , type_classes$math),
     list('pr'  , 'positive real'   , list(isPositiveReal)         , type_classes$math),
     list('nr'  , 'negative real'   , list(isNegativeReal)         , type_classes$math),

@@ -22,6 +22,8 @@ A \emph{\code{vector}} of function names
 Maintainer: \packageMaintainer{wyz.code.offensiveProgramming}
 }
 \examples{
-retrievePackageFunctionNames('wyz.code.offensiveProgramming')
+# take to much time on Windows apparently to pass CRAN package acceptance tests
+if (.Platform$OS.type == "unix")
+  retrievePackageFunctionNames('wyz.code.offensiveProgramming')
 }
 

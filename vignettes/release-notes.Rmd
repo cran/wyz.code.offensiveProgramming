@@ -17,12 +17,58 @@ vignette: >
 
 ```{r setup, include = FALSE}
 knitr::opts_chunk$set(collapse = TRUE, comment = "")
-source('vignette-common.R')
+source('common-style.R')
 ```
+
+# name [awesome-asterion-psi] package-version [1.1.23] timestamp [2021-10-05 22:58:54]
+
+1. CRAN 3 notes
+1. DESCRIPTION change URL - added an ending / as it seemed required
+1. removed lazydata as there is no data folder
+1. On :`r citefile("FunctionParameterTypeFactory.R")` conditionned example run. Kept only for unix systems. 
+
+# name [awesome-asterion-khi] package-version [1.1.22] timestamp [2021-10-05 20:17:45]
+
+1. CRAN information on obsolescence of lubridate - need to remove dependency.
+1. lubridate::date() was used in file `r citefile("FunctionParameterTypeFactory.R")`.
+<pre>
+FunctionParameterTypeFactory.R:    list('da'  , 'date'         , list(lubridate::is.Date)         , type_classes$date),
+FunctionParameterTypeFactory.R:    list('dc'  , 'POSIXct'      , list(lubridate::is.POSIXct)      , type_classes$date),
+FunctionParameterTypeFactory.R:    list('dl'  , 'POSIXlt'      , list(lubridate::is.POSIXlt)      , type_classes$date),
+</pre>
+1. Test, Duration: `r citefigure('7.7s')`, OK: `r citefigure('450')`
+1. `r citeexec('R CMD check')`, Duration: `r citefigure('32.1s')`, 0 errors ✓ | 0 warnings ✓ | 0 notes ✓
+1. `r citeval('Commercial software release management')`
+1. `r citefolder('vignette')` content update
+1. `r citeop("git")` alignment
+
+
+# name [awesome-asterion-phi] package-version [1.1.21] timestamp [2020-11-09 19:57:38]
+
+1. enforced R 4.0
+1. Test, Duration: `r citefigure('7.3s')`, OK: `r citefigure('450')`
+1. `r citeexec('R CMD check')`, Duration: `r citefigure('33.8s')`, 0 errors ✓ | 0 warnings ✓ | 0 notes ✓
+1. `r citeval('Commercial software release management')`
+1. `r citefolder('vignette')` content update
+1. `r citeop("git")` alignment
+
+# 
+
+1. modified implementation `r citefun("matchFunctionArguments")` function to solve aborption issue when called with empty parameter list. 
+1. modified `r citefun("FunctionParameterTypeFactory")` function. Added cantor real type. 
 
 Latest release replaces fully older ones, that are now considered obsoletes. Keep the pace, and  upgrade your packages to use the latest version!
 
-# Release 1.1.18
+# Release awesome-asterion-tau - 1.1.19 - 2020-05-04
+
+1. Test, Duration: `r citefigure('7.1s')`, OK: `r citefigure('450')`
+1. `r citeexec('R CMD check')`, Duration: `r citefigure('33.8s')`, 0 errors ✓ | 0 warnings ✓ | 0 notes ✓
+1. `r citeval('Commercial software release management')`
+1. `r citefolder('vignette')` structure update
+1. `r citefolder('vignette')` content update
+
+
+# Release 1.1.18 - awesome-asterion-sigma - 2005-05-04
 
 Main improvements are 
 

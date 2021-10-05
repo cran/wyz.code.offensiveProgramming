@@ -1,7 +1,6 @@
 import("data.table")
 import("R6")
 import("stringr")
-importFrom("lubridate", "is.Date", "is.POSIXct", "is.POSIXlt")
 importFrom("methods", "formalArgs", "getMethod", "is", "new", ".hasSlot")
 importFrom("utils", "methods", "installed.packages")
 importFrom("tidyr", "separate")

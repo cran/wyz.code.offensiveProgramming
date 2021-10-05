@@ -1,8 +1,8 @@
-c16a5a0d3c575cf7b879b2110f08104e *DESCRIPTION
-e7f4bd6379feb07b07918e1a700c1a0a *NAMESPACE
+d3e7d0dc2fea3f65c2d478f656361269 *DESCRIPTION
+6e5c6f164727bb466257dab3dbab3852 *NAMESPACE
 7d7e6c14db27910bfdaab50b0638b3d6 *R/EvaluationMode.R
 a386648b618589def4f26509da78e316 *R/FunctionParameterName.R
-cf722cd99252dee4d37380dfe7918e2e *R/FunctionParameterTypeFactory.R
+bd744fb8a70a0302a03b7c523c32cc6b *R/FunctionParameterTypeFactory.R
 a0c3a7d855cff89bb2b6e0a2590c2142 *R/TestCaseDefinition.R
 9d19e7892c70a9c584bbdd58c950a03c *R/defineEvaluationModes.R
 0a375057041b667907f78f78a4564cb9 *R/defineFunctionReturnTypesParameterName.R
@@ -19,7 +19,7 @@ a5a2888381703e3f0fdddfc8744c5ba4 *R/getObjectFunctionNames.R
 c079bd03b66c2b05c32c69d99a4b31ee *R/hasMainClass.R
 7a6ba4f2cd3632706c3ec6ef44437488 *R/identifyOPInstrumentationLevel.R
 0813904b7f6f223799619f4cea05df3b *R/isAuditable.R
-dc094d004abb22a6a380bf9755a1c1d2 *R/matchFunctionArguments.R
+33454c1b3c0238bed78577811dc25347 *R/matchFunctionArguments.R
 741356fa628b2e3fb81102c9741591ca *R/matchFunctionSignature.R
 f9eb0da9fca3e9843f8b3ab505df6890 *R/opInformation.R
 0b052763935d1e73092593bc83fe7c77 *R/outOfPackage.R
@@ -41,8 +41,8 @@ ddfc3b629e3229d207a9a4ce7d540c3b *R/verifyFunctionName.R
 7c7faf5607a34aef59ef0efdd462919e *R/verifyName.R
 fe7e132a9ed67a53e22d270d0abb7c71 *R/verifyObjectNames.R
 bde7911ba923dff63f7dd5a5624f93e0 *R/verifyTestCaseDefinitions.R
-6cf8345c0de32a7893d46ed86e41040a *build/partial.rdb
-2f106cd651bd7eeed93898b51e652a63 *build/vignette.rds
+d4fa3e389218401f526ca053dd2aefd7 *build/partial.rdb
+d3a8792be99fbd580117bd6df6d50d8c *build/vignette.rds
 c2ad87f69656dfd1717bae3fc1abd5c9 *inst/code-samples/both-defs/good/full/AdditionTCFIG1.R
 5a8b83ea6d32a17f673c3b2f00591641 *inst/code-samples/both-defs/good/full/AdditionTCFI_G1.R
 3402853db90ef8373a2f5c5f5d0059bd *inst/code-samples/both-defs/good/partial/AdditionTCFIP.R
@@ -82,9 +82,10 @@ ea4eb040d5f2a626ece021a6f4d0449b *inst/code-samples/tcd-defs/good/full/AdditionT
 aa33abdc563251228d6f164173a5f63a *inst/code-samples/tcd-defs/good/full/AdditionTC_.R
 fe80e9bf4cd3029516c2accaccfa1047 *inst/code-samples/tcd-defs/good/partial/AdditionTCPartial.R
 a26874cd973786c67f0171584ad60aa9 *inst/code-samples/tcd-defs/good/partial/AdditionTC_Partial.R
-66f8535272322f8ddf40827b81f4486c *inst/doc/release.R
-a24a06b40273101e3d14fab4c4c65728 *inst/doc/release.Rmd
-6f7af46ed49cdb424d4ff9f3eb8e76fd *inst/doc/release.html
+5bc83ef41cde426556b33d69e8e21d49 *inst/doc/release-notes.R
+904216145700decf369b5d5d9428f4ec *inst/doc/release-notes.Rmd
+121b3cfd4b37a7906eafb1cceb583add *inst/doc/release-notes.html
+0e5b55bb4235da3253997ae93cfc03b5 *inst/extdata/project-release.rds
 fdc97fc8cc226fb8c9d25a2f9caab31a *man/EvaluationMode.Rd
 804b745b8d4592e69b3f271210ec9a6d *man/FunctionParameterName.Rd
 2d0c4b197533c88272dff87f4f3f6f05 *man/FunctionParameterTypeFactory.Rd
@@ -110,7 +111,7 @@ becc725f375ae0fc27971ef9c0de800d *man/print.TestCaseDefinition.Rd
 478c9241d5af1625c66cca1c3dbab8a4 *man/retrieveFunctionArguments.Rd
 7775acbc2506b5e728779cb82a050750 *man/retrieveFunctionArgumentsNames.Rd
 f8068048d5d64d43df7d08377f4ef7a1 *man/retrieveFunctionReturnTypes.Rd
-ee90a1ece6adb8aec62cb5920e70f38e *man/retrievePackageFunctionNames.Rd
+971330c8d9a0944fff3de3dcbd052167 *man/retrievePackageFunctionNames.Rd
 19b866251163799ae98f7b23e66db663 *man/retrieveTestCaseDefinitions.Rd
 0c4592d7b5dd272596a0c77d7cb9e8b3 *man/runFunction.Rd
 d22a36fb52176a08e5afdf8a6232a920 *man/runTestCase.Rd
@@ -159,7 +160,7 @@ d6a33fe655f01c01682a1dcec09e0044 *tests/testthat/test_verifyFunctionReturnTypesD
 ba76b9f52b727c7fd9372eddf42d6aa0 *tests/testthat/test_verifyName.R
 a7b9a1de05c5af44b84d027092043fa6 *tests/testthat/test_verifyObjectNames.R
 031815fe8666cb1789ce6ca5d14e46f8 *tests/testthat/test_verifyTestCaseDefinitions.R
+c4c87e9461f00d88cc27182c80fb4e87 *vignettes/common-style.R
 91315da7238f7fbb4e195b34b8cfa532 *vignettes/images/op-hex.png
-a24a06b40273101e3d14fab4c4c65728 *vignettes/release.Rmd
-23ab1a1620a668324d399ef7c874b792 *vignettes/style.css
-da66688ead9589d9d6742dc0fa62942f *vignettes/vignette-common.R
+904216145700decf369b5d5d9428f4ec *vignettes/release-notes.Rmd
+b6bf80c77b5d818be62f6f63c3501cf6 *vignettes/style.css

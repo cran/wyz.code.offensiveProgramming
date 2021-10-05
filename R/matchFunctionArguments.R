@@ -3,6 +3,17 @@ matchFunctionArguments <- function(realArguments_l,
 
   verifySignature <- function(real_l, theoritical_s, message_s_1) {
 
+    lr <- length(real_l)
+    lt <- length(theoritical_s)
+    if (lt == 0) {
+      return(rbindlist(list(
+        list(parameter_name = '',
+             parameter_value = NA_character_,
+             validity = TRUE,
+             message = paste('no parameter required', ifelse(lr == 0, '', paste(lr, 'values provided')))
+      ))))
+    }
+
     remaining <- theoritical_s
     anm <- sapply(seq_len(length(real_l)), function(k) {
       nm <- names(real_l)[k]
@@ -43,10 +54,10 @@ matchFunctionArguments <- function(realArguments_l,
 
   }
 
-  message <- NA_character_
-  ellipsis <- getEllipsisName()
   lsa <- length(signatureArguments_s)
   lra <- length(realArguments_l)
+  message <- NA_character_
+  ellipsis <- getEllipsisName()
   use_ellipsis <- ellipsis %in% signatureArguments_s
   if (lra > lsa ) {
     if (!use_ellipsis) {
@@ -54,6 +65,6 @@ matchFunctionArguments <- function(realArguments_l,
     }
   }
 
-  ra <- if (use_ellipsis) realArguments_l else realArguments_l[1:min(lra, lsa)] # force cut
+  ra <- if (use_ellipsis || lra == 0) realArguments_l else realArguments_l[1:min(lra, lsa)] # force cut
   verifySignature(ra, signatureArguments_s, message)
 }
