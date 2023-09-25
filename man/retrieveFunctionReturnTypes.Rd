@@ -8,13 +8,13 @@ Retrieve the function return type definitions from an \emph{\code{object}}.
 retrieveFunctionReturnTypes(object_o_1)
 }
 \arguments{
-  \item{object_o_1}{the \emph{\code{object}} to consider}
+  \item{object_o_1}{the \code{object} to consider}
 }
 \value{
 A polymorphic return that is either
-\item{a \emph{\code{list}}}{as returned by the \bold{\emph{\code{\link{verifyObjectNames}}}} function}
-\item{another \emph{\code{list}}}{as returned by the \bold{\emph{\code{\link{verifyFunctionReturnTypesDefinition}}}} function}
-\item{a \emph{\code{data.table}}}{the function parameter types definition as declared in the source class}
+\item{a \code{list}}{as returned by the \code{\link{verifyObjectNames}} function}
+\item{another \code{list}}{as returned by the \code{\link{verifyFunctionReturnTypesDefinition}} function}
+\item{a \code{data.table}}{the function parameter types definition as declared in the source class}
 }
 \author{
 \packageAuthor{wyz.code.offensiveProgramming}

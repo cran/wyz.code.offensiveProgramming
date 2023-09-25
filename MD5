@@ -1,4 +1,4 @@
-d3e7d0dc2fea3f65c2d478f656361269 *DESCRIPTION
+3e2839987f8f045a84ce365647d84693 *DESCRIPTION
 6e5c6f164727bb466257dab3dbab3852 *NAMESPACE
 7d7e6c14db27910bfdaab50b0638b3d6 *R/EvaluationMode.R
 a386648b618589def4f26509da78e316 *R/FunctionParameterName.R
@@ -41,8 +41,8 @@ ddfc3b629e3229d207a9a4ce7d540c3b *R/verifyFunctionName.R
 7c7faf5607a34aef59ef0efdd462919e *R/verifyName.R
 fe7e132a9ed67a53e22d270d0abb7c71 *R/verifyObjectNames.R
 bde7911ba923dff63f7dd5a5624f93e0 *R/verifyTestCaseDefinitions.R
-d4fa3e389218401f526ca053dd2aefd7 *build/partial.rdb
-d3a8792be99fbd580117bd6df6d50d8c *build/vignette.rds
+566c0966af5a2dd3b31323f11ebc3cb0 *build/partial.rdb
+25dcee570b7dc21aba95063714caeff8 *build/vignette.rds
 c2ad87f69656dfd1717bae3fc1abd5c9 *inst/code-samples/both-defs/good/full/AdditionTCFIG1.R
 5a8b83ea6d32a17f673c3b2f00591641 *inst/code-samples/both-defs/good/full/AdditionTCFI_G1.R
 3402853db90ef8373a2f5c5f5d0059bd *inst/code-samples/both-defs/good/partial/AdditionTCFIP.R
@@ -83,9 +83,9 @@ aa33abdc563251228d6f164173a5f63a *inst/code-samples/tcd-defs/good/full/AdditionT
 fe80e9bf4cd3029516c2accaccfa1047 *inst/code-samples/tcd-defs/good/partial/AdditionTCPartial.R
 a26874cd973786c67f0171584ad60aa9 *inst/code-samples/tcd-defs/good/partial/AdditionTC_Partial.R
 5bc83ef41cde426556b33d69e8e21d49 *inst/doc/release-notes.R
-904216145700decf369b5d5d9428f4ec *inst/doc/release-notes.Rmd
-121b3cfd4b37a7906eafb1cceb583add *inst/doc/release-notes.html
-0e5b55bb4235da3253997ae93cfc03b5 *inst/extdata/project-release.rds
+e63e27e037cd441f49a21dad4c17b524 *inst/doc/release-notes.Rmd
+e52e7ae2b30f4475a8c51d40459ad8d6 *inst/doc/release-notes.html
+d2c850f7b21b495772e74b9223636850 *inst/extdata/project-release.rds
 fdc97fc8cc226fb8c9d25a2f9caab31a *man/EvaluationMode.Rd
 804b745b8d4592e69b3f271210ec9a6d *man/FunctionParameterName.Rd
 2d0c4b197533c88272dff87f4f3f6f05 *man/FunctionParameterTypeFactory.Rd
@@ -110,9 +110,9 @@ becc725f375ae0fc27971ef9c0de800d *man/print.TestCaseDefinition.Rd
 3efe61244d393e5b87c7484f30391cac *man/retrieveFactory.Rd
 478c9241d5af1625c66cca1c3dbab8a4 *man/retrieveFunctionArguments.Rd
 7775acbc2506b5e728779cb82a050750 *man/retrieveFunctionArgumentsNames.Rd
-f8068048d5d64d43df7d08377f4ef7a1 *man/retrieveFunctionReturnTypes.Rd
+400c5084b6457ab31313890dacde8198 *man/retrieveFunctionReturnTypes.Rd
 971330c8d9a0944fff3de3dcbd052167 *man/retrievePackageFunctionNames.Rd
-19b866251163799ae98f7b23e66db663 *man/retrieveTestCaseDefinitions.Rd
+b72b3a2e6d268536790d3331e485c6ab *man/retrieveTestCaseDefinitions.Rd
 0c4592d7b5dd272596a0c77d7cb9e8b3 *man/runFunction.Rd
 d22a36fb52176a08e5afdf8a6232a920 *man/runTestCase.Rd
 e41b50d7e2e56f91c7723e7a33c2d867 *man/runTransientFunction.Rd
@@ -162,5 +162,5 @@ a7b9a1de05c5af44b84d027092043fa6 *tests/testthat/test_verifyObjectNames.R
 031815fe8666cb1789ce6ca5d14e46f8 *tests/testthat/test_verifyTestCaseDefinitions.R
 c4c87e9461f00d88cc27182c80fb4e87 *vignettes/common-style.R
 91315da7238f7fbb4e195b34b8cfa532 *vignettes/images/op-hex.png
-904216145700decf369b5d5d9428f4ec *vignettes/release-notes.Rmd
+e63e27e037cd441f49a21dad4c17b524 *vignettes/release-notes.Rmd
 b6bf80c77b5d818be62f6f63c3501cf6 *vignettes/style.css

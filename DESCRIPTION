@@ -1,7 +1,7 @@
 Package: wyz.code.offensiveProgramming
 Type: Package
 Title: Wizardry Code Offensive Programming
-Version: 1.1.23
+Version: 1.1.24
 Author: Fabien Gelineau <neonira@gmail.com>
 Maintainer: Fabien Gelineau <neonira@gmail.com>
 Description: Allows to turn standard R code into offensive programming code. 
@@ -24,6 +24,6 @@ RoxygenNote: 6.1.1
 VignetteBuilder: knitr
 URL: https://neonira.github.io/offensiveProgrammingBook_v1.2.2/
 NeedsCompilation: no
-Packaged: 2021-10-05 21:13:03 UTC; fabien
+Packaged: 2023-09-25 06:33:54 UTC; fabien
 Repository: CRAN
-Date/Publication: 2021-10-05 21:40:02 UTC
+Date/Publication: 2023-09-25 07:20:02 UTC
